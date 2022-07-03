@@ -19,14 +19,11 @@
 </template>
 
 <script>
-import SomeComponent from "./SomeComponent";
-
 export default {
     name: "CreateComponent",
 
     components: {
-        SomeComponent
-    },
+     },
 
     data() {
         return {
@@ -43,7 +40,7 @@ export default {
     },
 
     mounted() {
-        this.$parent.$refs.index.indexLog()
+
     },
 
     methods: {

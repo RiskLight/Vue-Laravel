@@ -21,8 +21,7 @@
 </head>
 <body>
     <div id="app" class="p-5">
-        <post-component></post-component>
-
+        @yield('content')
     </div>
 {{--    <script type="module" src="{{ asset('js/app.js') }}" defer></script>--}}
 </body>

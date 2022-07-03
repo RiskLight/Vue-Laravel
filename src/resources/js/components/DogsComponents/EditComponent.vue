@@ -6,7 +6,8 @@
         <td><input type="number" v-model="age" class="form-control"></td>
         <td><input type="text" v-model="breed" class="form-control"></td>
         <td><input type="text" v-model="master" class="form-control"></td>
-        <td><a href="#" @click.prevent="updateDog(dog.id)" class="btn btn-primary">Update</a></td>
+        <td><a @click="updateDog(dog.id)" class="btn btn-primary">Update</a></td>
+        <td><a @click="closeEditDog(dog.id)" class="btn btn-warning">Close</a></td>
     </tr>
 
 </template>
@@ -47,6 +48,10 @@ export default {
                     this.$parent.getDogs();
                 })
         },
+
+        closeEditDog() {
+            this.$parent.editDogId = null;
+        }
 
     }
 }

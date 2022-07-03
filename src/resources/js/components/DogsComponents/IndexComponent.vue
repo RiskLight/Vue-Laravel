@@ -95,9 +95,6 @@ export default {
             return this.editDogId === id
         },
 
-        indexLog() {
-            console.log('this is index component')
-        }
     }
 }
 </script>
