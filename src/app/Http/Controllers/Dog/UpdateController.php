@@ -14,6 +14,6 @@ class UpdateController extends Controller
     {
         $data = $request->validated();
         $dog->update($data);
-        return $data;
+        return response([]);
     }
 }

@@ -12,6 +12,7 @@ class StoreController extends Controller
     public function __invoke(DogRequest $request)
     {
         $data = $request->validated();
-        return Dog::create($data);
+        $dog = Dog::create($data);
+        return response([]);
     }
 }
